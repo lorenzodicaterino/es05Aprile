@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .navbar-custom {
+        background-color: #003348;
+      }
+
+      .white {
+        color: white;
+      }
+            .footer {
+        position: fixed;
+        text-align: center;
+        bottom: 0px;
+        width: 100%;
+        font-size: 10px;
+      }
+
+      button{
+        background-color:#003348
+      }
+
+      i{
+        color: white;
+      }
+
+        th {
+        text-align: center;
+        align-items: center;
+      }
+
+        td {
+        text-align: center;
+      }
+
+    </style>
+
+    <title>ESA</title>
+  </head>
+  <body>
+        <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-md navbar-custom">
+        <div
+          class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"
+        >
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link white" href="#">Sistemi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link white" href="oggetti.html">Oggetti celesti</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mx-auto order-0">
+          <a class="navbar-brand mx-auto" href="index.html"
+            ><img src="img/ESA_logo_2020_White-2048x1286.jpg" width="140px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target=".dual-collapse2"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <div class="input-group">
+                <div class="form-outline" data-mdb-input-init>
+                  <input
+                    type="search"
+                    id="form1"
+                    class="form-control"
+                    placeholder="Search"
+                  />
+                </div>
+                <label style="color:#003348">a</label>
+                <button
+                  type="button"
+                  class="btn"
+                  style="border: none;"
+                  data-mdb-ripple-init
+                >
+                  <i class="fas fa-search" style="color: white;"></i>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <table
+        class="table table-striped mt-1"
+        style="width: 90%; margin-left: 60px"
+      >
+        <thead>
+            <th>#</th>
+            <th>Codice</th>
+            <th>Nome</th>
+            <th>Tipologia</th>
+           <th style="text-align: right;"><button type="button" class="btn" style="width: 99px;"  data-toggle="modal" data-target="#inserimento-sistema"><i class="fa fa-plus"></button></th>
+        </thead>
+        <tbody id="tabella-sistemi"></tbody>
+      </table>
+    </div>
+
+    <!-- INIZIO MODAL INSERIMENTO-SISTEMA-->
+  <div class="modal" id="inserimento-sistema">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 class="modal-title">Inserimento sistema</h1>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body form-group" id="corpo-inserimento-sistema">
+          <label for="input-nome-sistema" class="mt-2">Nome</label>
+          <input class="form-control" id="input-nome-sistema" type="text" placeholder="Nome"/>
+           <label for="input-tipo-sistema" class="mt-2">Tipologia</label>
+          <input class="form-control" id="input-tipo-sistema" type="text" placeholder="Tipologia"/>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal" onclick="inserimentoSistema()">Salva</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Indietro</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+<!-- FINE MODAL INSERIMENTO-SISTEMA-->
+
+
+<div class="footer">&copy; Lorenzo Di Caterino</div>
+    <script
+      src="js/jquery.js"></script>
+          <script src="js/sweetalert2.js"> </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="js/script.js"></script>
+  </body>
+</html>

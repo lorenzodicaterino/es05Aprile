@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\es05AprileESA.props" />
+</Project>

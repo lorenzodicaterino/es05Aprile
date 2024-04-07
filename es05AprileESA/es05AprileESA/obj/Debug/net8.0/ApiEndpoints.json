@@ -1,0 +1,203 @@
+[
+  {
+    "ContainingType": "es05AprileESA.Controllers.OggettoController",
+    "Method": "StampaTuttiOggetti",
+    "RelativePath": "Oggetto",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "es05AprileESA.Controllers.OggettoController",
+    "Method": "InserisciOggetto",
+    "RelativePath": "Oggetto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "es05AprileESA.DTO.OggettoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "es05AprileESA.Controllers.OggettoController",
+    "Method": "RecuperaPerCodice",
+    "RelativePath": "Oggetto/codice/{codice}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codice",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "es05AprileESA.Controllers.OggettoController",
+    "Method": "EliminaOggetto",
+    "RelativePath": "Oggetto/elimina/{codice}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codice",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "es05AprileESA.Controllers.OggettoController",
+    "Method": "ModificaOggetto",
+    "RelativePath": "Oggetto/modifica",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "es05AprileESA.DTO.OggettoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "es05AprileESA.Controllers.OggettoController",
+    "Method": "SistemiPerOggetti",
+    "RelativePath": "Oggetto/sistemi/{cod}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cod",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "es05AprileESA.Controllers.OggettoController",
+    "Method": "InserisciInSistema",
+    "RelativePath": "Oggetto/sistemi/{codO}/{codS}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codO",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "codS",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "es05AprileESA.Controllers.SistemaController",
+    "Method": "StampaTuttiSistemi",
+    "RelativePath": "Sistema",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "es05AprileESA.Controllers.SistemaController",
+    "Method": "InserisciSistema",
+    "RelativePath": "Sistema",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "es05AprileESA.DTO.SistemaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "es05AprileESA.Controllers.SistemaController",
+    "Method": "RecuperaPerCodice",
+    "RelativePath": "Sistema/codice/{codice}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codice",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "es05AprileESA.Controllers.SistemaController",
+    "Method": "EliminaSistema",
+    "RelativePath": "Sistema/elimina/{codice}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codice",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "es05AprileESA.Controllers.SistemaController",
+    "Method": "ModificaSistema",
+    "RelativePath": "Sistema/modifica",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "es05AprileESA.DTO.SistemaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "es05AprileESA.Controllers.SistemaController",
+    "Method": "OggettiPerSistema",
+    "RelativePath": "Sistema/oggetti/{cod}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cod",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

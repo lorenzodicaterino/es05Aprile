@@ -1,0 +1,6 @@
+@es05AprileESA_HostAddress = http://localhost:5107
+
+GET {{es05AprileESA_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

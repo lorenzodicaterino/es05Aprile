@@ -1,0 +1,27 @@
+creare il sistema di gestione oggetti celesti per la ESA
+
+ogni oggetto celeste è caratterizzato da:
+-Nome
+-codice univoco
+-data scoperta
+-scopritore
+-tipologia
+-distanza dalla terra
+-coordinate polari
+
+ogni oggetto celeste può far parte di un sistema che può essere planetario/galassia/costellazione...
+
+ogni sistema è caratterizzato da:
+-Nome
+-codice univoco
+-tipo
+
+ricercare gli elementi per:
+
+-tipo di sistema
+-nome dell'oggetto celeste
+-scopritore
+-tipologia
+
+regole:
+- non posso inserire un oggetto all'interno di un sistema e fa gia parte di un altro sistema dello stesso tipo ma diverso.
